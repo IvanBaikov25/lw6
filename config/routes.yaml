@@ -1,0 +1,19 @@
+api_login:
+    path: /api/login
+    controller: App\Controller\AuthController::login
+    methods: [POST]
+
+api_token_refresh:
+    path: /api/token/refresh
+    controller: App\Controller\AuthController::refresh
+    methods: [POST]
+
+api_logout:
+    path: /api/logout
+    controller: App\Controller\AuthController::logout
+    methods: [POST]
+
+api_devices:
+    path: /api/devices
+    controller: App\Controller\AuthController::getDevices
+    methods: [GET]
